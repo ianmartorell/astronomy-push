@@ -4,11 +4,11 @@
 	name: 'Thing'
 	collection: Things
 	fields:
-		theObject:
-			type: 'object'
-			default: -> 'theArray': []
+		theArray:
+			type: 'array'
+			default: -> []
 	methods:
 		arrayPush: ->
-			@theObject.theArray.push 'sth'
+			@theArray.push 'sth'
 		astroPush: ->
-			@push 'theObject.theArray', 'sth'
+			@push 'theArray', 'sth'
